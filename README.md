@@ -1,7 +1,7 @@
 # MGSS_grid: A Multigrid Spline Smoothing Toolbox for Grid Data
 In [Siebenborn and Wagner, 2019](https://arxiv.org/abs/1901.00654) a matrix-free multigrid preconditioned CG-method is proposed to perform the penalized spline method in more than the usual `P<=2` dimensions.
 The related implementations (cf. [github](https://github.com/SplineSmoothing/MGSS)) are based on exploiting the special structure of the underlying spline basis.
-In the case of grid data, this structure drastically symplyfies, which can be exploited to speed up the CG and the MGCG method.
+In the case of grid data, this structure drastically symplifies, which can be exploited to speed up the CG and the MGCG method.
 
 ## Manual
 The manuals for the matrix-free CG-method (CG.R) and the matrix-free MGCG-method (MGCG.R), both with grid data, are provided.
@@ -24,8 +24,12 @@ Ad <- MVP_kronecker_rcpp(tPhiPhi_list, d) + lambda*rowSums( sapply( 1:length(Psi
 ```
 
 ### MGCG
-
-
+Also the MGCG method profits from the simplified data structure by replacing every operation with the spline matrices by the corresponding Kroncker products.
+For example
+```R
+z <- v_cycle(tPhiPhi_list, Psi_list, Rest, Prol, lambda, r, nu, w)
+```
+applies the `v_cycle` directly to the components `tPhiPhi_list` of the Kronecker-product.
 
 
 ## Application
