@@ -33,3 +33,7 @@ applies the `v_cycle` directly to the components `tPhiPhi_list` of the Kronecker
 
 
 ## Application
+
+<img src="docs/data.png" width="600">
+
+The test data is taken from https://terra.nasa.gov/about/terra-instruments/aster and shows satellite elevation measurments of the earth surface.
