@@ -34,7 +34,7 @@ applies the `v_cycle` directly to the components `tPhiPhi_list` of the Kronecker
 
 ## Application
 The methods are applied to fit a surface model.
-The test data is taken from https://terra.nasa.gov/about/terra-instruments/aster and shows satellite elevation measurments of the earth surface.
+The test data is taken from https://terra.nasa.gov/about/terra-instruments/aster and shows satellite elevation measurements of the earth surface.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/46927836/58551792-2fd42d00-8211-11e9-9d9f-5dd4dbf2fdcd.png" width="70%">
 </p>
